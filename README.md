@@ -53,7 +53,16 @@ The source files are not tracked in git because they consist of large PDFs, ZIPs
 
 Each persona has a name, county, region, age, race/ethnicity, gender, education, income band, party lean, ideology, past voting pattern, turnout likelihood, top issues, and a short profile. All of these demographics across all 100 personas are tailored to match the statewide population.
 
-## A Note on Weighting
+## Iteration
+
+The work moved through a few stages:
+
+1. I tried weighting a 100-person sample, but the weights were unstable at that size. I then rebuilt the personas so the raw 100-person electorate mapped more closely to the target population upfront, using extensive quantitative public data.
+2. I used repeated response aggregation. Each persona answered each matchup question ten times, and I used the modal answer to reduce response-level noise.
+3. I tested whether the results were stable at different run sizes. I ran the same repeated-aggregation setup at 100, 1,000, 10,000, and 100,000 trial runs. The core results were stable by the 1,000-trial version.
+4. I verified that multiple runs of the 1000-trial version produced consistent results.
+
+## A Note on Weighting Personas
 
 I initially tried weighting because a 100-person sample can drift quickly.
 
@@ -109,15 +118,6 @@ Real-world polling is not used in the dataset that informs persona answers. It i
 | McMorrow vs Rogers | -0.1 | -0.4 | -2.1 |
 
 The model is closest to polling on McMorrow, somewhat close to Detroit Chamber on El-Sayed, and much more bullish on Stevens than either polling source.
-
-## Iteration
-
-The work moved through a few stages:
-
-1. I tried weighting a 100-person sample, but the weights were unstable at that size. I then rebuilt the personas so the raw 100-person electorate mapped more closely to the target population upfront, using extensive quantitative public data.
-2. I used repeated response aggregation. Each persona answered each matchup question ten times, and I used the modal answer to reduce response-level noise.
-3. I tested whether the results were stable at different run sizes. I ran the same repeated-aggregation setup at 100, 1,000, 10,000, and 100,000 trial runs. The core results were stable by the 1,000-trial version.
-4. I verified that multiple runs of the 1000-trial version produced consistent results.
 
 ## Important Limitation
 
