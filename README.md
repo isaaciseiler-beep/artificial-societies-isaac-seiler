@@ -4,6 +4,7 @@ This experiment tests which Democratic candidate looks strongest against Mike Ro
 
 I modeled likely Michigan general-election voters, not Democratic primary voters. The goal was to test general election viability of the leading Democratic candidates.
 
+
 ## Why Michigan
 
 I chose Michigan because I have worked in Michigan politics and saw how hard it is to get useful public opinion data. Private polling is expensive, and smaller campaigns often either spend a large share of their budget on it or go without it. Artificial Societies solves a problem I've experienced in the field: and I wanted to use my domain expertise to put the concept of synthetic polling into action.
@@ -13,6 +14,7 @@ For context on the current status of the race, check out these articles:
 [Michigan’s U.S. Senate primary highlights divisions within Democratic Party, _Michigan Advance_](https://michiganadvance.com/2026/06/09/stevens-mcmorrow-el-sayed-clash-over-foreign-policy-party-leadership-as-primary-approaches/)
 
 [Ballotpedia Overview](https://ballotpedia.org/United_States_Senate_election_in_Michigan%2C_2026_%28August_4_Democratic_primary%29)
+
 
 ## Main Finding
 
@@ -24,6 +26,7 @@ The model points to Haley Stevens as the strongest general-election candidate.
 
 This is not a primary forecast. El-Sayed may be strong with Democratic primary voters while still looking weaker with a broader general electorate.
 
+
 ## Survey Questions
 
 Each persona answered these single-select questions:
@@ -33,6 +36,7 @@ Each persona answered these single-select questions:
 3. If the general election for Michigan's 2026 U.S. Senate race were held today and the candidates were Mallory McMorrow and Mike Rogers, who would you most likely support?
 
 Each question allowed the Democrat, Mike Rogers, or `Undecided`.
+
 
 ## How The Personas Were Built
 
@@ -53,6 +57,7 @@ The source files are not tracked in git because they consist of large PDFs, ZIPs
 
 Each persona has a name, county, region, age, race/ethnicity, gender, education, income band, party lean, ideology, past voting pattern, turnout likelihood, top issues, and a short profile. All of these demographics across all 100 personas are tailored to match the statewide population.
 
+
 ## Process
 
 The work moved through a few stages:
@@ -61,6 +66,7 @@ The work moved through a few stages:
 2. I used repeated response aggregation. Each persona answered each matchup question ten times, and I used the modal answer to reduce response-level noise.
 3. I tested whether the results were stable at different run sizes. I ran the same repeated-aggregation setup at 100, 1,000, 10,000, and 100,000 trial runs. The core results were stable by the 1,000-trial version.
 4. I verified that multiple runs of the 1000-trial version produced consistent results.
+
 
 ## Determining Optimal Run Size
 
@@ -74,6 +80,7 @@ I tested smaller and larger versions of the same experiment. These runs use the 
 | 10000% current | 100,000 | 300,000,000 | -6.6 | +17.7 | -0.1 |
 
 The 1,000-run version is my preferred version because it is much cheaper and less time intensive than the very large runs and already stable. The largest run, featuring 300,000,000 question-level runs, took over 75 minutes to complete. Going from 10,000 to 100,000 runs did not change the one-decimal margins, and does not meaningfully alter the results.
+
 
 ## How The Run Works
 
@@ -89,6 +96,7 @@ x 1,000 trial runs
 
 For each persona-question pair, the persona answers 10 times. The most common answer becomes that persona's answer for that trial. This controls response-level outliers without changing the persona set.
 
+
 ## Testing Repeatability
 
 I also ran two additional full-size checks after the initial 1,000-trial run. These runs were isolated and not influenced by the initial output files.
@@ -100,6 +108,7 @@ I also ran two additional full-size checks after the initial 1,000-trial run. Th
 | Independent B | 1,000 | 3,000,000 | -6.6 | +16.6 | -0.3 |
 
 These results are repeatable within a slim margin. Across three independent full-size runs, the El-Sayed and McMorrow margins are unchanged at one-decimal precision, and the Stevens margin moves only from +16.4 to +16.6. The data produced by the additional runs support the core data.
+
 
 ## Polling Comparison
 
@@ -113,6 +122,7 @@ Real-world polling is not used in the dataset that informs persona answers. It i
 
 The model is closest to polling on McMorrow, somewhat close to Detroit Chamber on El-Sayed, and much more bullish on Stevens than either polling source.
 
+
 ## Important Limitation
 
 The personas are built from public data, not real voter interviews.
@@ -121,11 +131,13 @@ Census, ACS, election returns, local reporting, candidate positions, and FEC dat
 
 I also saw one major LLM failure during iteration: when polling was present in the working context, the assistant sometimes tried to steer the model toward what looked like the "correct" polling answer. I removed polling from the persona-response side and kept it only as a final validation check.
 
+
 ## A Note on Weighting Personas
 
 I initially tried weighting because a 100-person sample can drift quickly.
 
 The problem was that with only 100 personas, weights could end up influencing the end outcome too much. Instead of relying on heavy weights, I adjusted the raw 100-person file to match the target electorate upfront. 
+
 
 ## Conclusion
 
@@ -135,6 +147,7 @@ This experiment attempts to measure a voting population that is becoming increas
 
 Given the size of the gap between results and the public data, I would want to test a much larger synthetic sample before making stronger claims. I would also have more confidence in the synthetic result if the quantitative outputs were supplemented with qualitative data from real Michigan voters.
 
+
 ## Run
 
 ```bash
@@ -142,6 +155,7 @@ python3 persona_trials/trial_001_general_electorate/run_michigan_senate_1000_tri
 ```
 
 Generated outputs are written to `persona_trials/trial_001_general_electorate/results/`.
+
 
 ## Main Files
 
