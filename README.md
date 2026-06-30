@@ -8,6 +8,12 @@ I modeled likely Michigan general-election voters, not Democratic primary voters
 
 I chose Michigan because I have worked in Michigan politics and saw how hard it is to get useful public opinion data. Private polling is expensive, and smaller campaigns often either spend a large share of their budget on it or go without it. Artificial Societies solves a problem I've experienced in the field: and I wanted to use my domain expertise to put the concept of synthetic polling into action.
 
+For context on the current status of the race, check out these articles:
+
+[Michigan’s U.S. Senate primary highlights divisions within Democratic Party, _Michigan Advance_
+]([url](https://michiganadvance.com/2026/06/09/stevens-mcmorrow-el-sayed-clash-over-foreign-policy-party-leadership-as-primary-approaches/?utm_source=chatgpt.com&__cf_chl_f_tk=QDSv4YBHDQoeefRidAgClIaXDmdKHLUzs01UUaRgC9Y-1782798991-1.0.1.1-GSM0auWIIQ_kYpMsuLXQnYXvlMYwap7xHPChDjXdIec))
+[Ballotpedia Overview]([url](https://ballotpedia.org/United_States_Senate_election_in_Michigan%2C_2026_%28August_4_Democratic_primary%29?))
+
 ## Main Finding
 
 The model points to Haley Stevens as the strongest general-election candidate.
@@ -49,7 +55,7 @@ The source files are not tracked in git because they consist of large PDFs, ZIPs
 
 Each persona has a name, county, region, age, race/ethnicity, gender, education, income band, party lean, ideology, past voting pattern, turnout likelihood, top issues, and a short profile. All of these demographics across all 100 personas are tailored to match the statewide population.
 
-## Weighting
+## A Note on Weighting
 
 I initially tried weighting because a 100-person sample can drift quickly.
 
@@ -71,7 +77,7 @@ For each persona-question pair, the persona answers 10 times. The most common an
 
 I utilized this approach because I wanted to correct for potential outliers, twice: first at the 
 
-## Run Size Check
+## Determining Optimal Run Size
 
 I tested smaller and larger versions of the same experiment. These runs use the same personas and questions, but different trial counts. They also use separate trial-id ranges, so they are independent experiments.
 
@@ -84,19 +90,19 @@ I tested smaller and larger versions of the same experiment. These runs use the 
 
 The 1,000-run version is my preferred version because it is much cheaper and less time intensive than the very large runs and already stable. The largest run, featuring 300,000,000 question-level runs, took over 75 minutes to complete. Going from 10,000 to 100,000 runs did not change the one-decimal margins, and does not meaningfully alter the results.
 
-## Repeatability Check
+## Testing Repeatability
 
-I also ran two additional full-size checks after the initial 1,000-trial run. These runs used separate trial-id ranges, so they were not influenced by the initial output files.
+I also ran two additional full-size checks after the initial 1,000-trial run. These runs were isolated and not influenced by the initial output files.
 
-| Run | Trial-id range | Trial runs | Question-level runs | El-Sayed margin | Stevens margin | McMorrow margin |
+| Run | Trial runs | Question-level runs | El-Sayed margin | Stevens margin | McMorrow margin |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| Initial current run | 1-1,000 | 1,000 | 3,000,000 | -6.6 | +16.4 | -0.3 |
-| Independent A | 3,001-4,000 | 1,000 | 3,000,000 | -6.6 | +16.5 | -0.3 |
-| Independent B | 4,001-5,000 | 1,000 | 3,000,000 | -6.6 | +16.6 | -0.3 |
+| Initial current run | 1,000 | 3,000,000 | -6.6 | +16.4 | -0.3 |
+| Independent A | 1,000 | 3,000,000 | -6.6 | +16.5 | -0.3 |
+| Independent B | 1,000 | 3,000,000 | -6.6 | +16.6 | -0.3 |
 
-These results are repeatable within a slim margin. Across three independent full-size runs, the El-Sayed and McMorrow margins are unchanged at one-decimal precision, and the Stevens margin moves only from +16.4 to +16.6. That supports the core finding as stable rather than an artifact of one generated output file.
+These results are repeatable within a slim margin. Across three independent full-size runs, the El-Sayed and McMorrow margins are unchanged at one-decimal precision, and the Stevens margin moves only from +16.4 to +16.6. The data produced by the additional runs support the core data.
 
-## Polling Check
+## Polling Comparison
 
 Real-world polling is not used in the dataset that informs persona answers. It is only used afterward as a check.
 
