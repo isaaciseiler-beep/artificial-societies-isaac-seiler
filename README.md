@@ -12,6 +12,7 @@ For context on the current status of the race, check out these articles:
 
 [Michigan’s U.S. Senate primary highlights divisions within Democratic Party, _Michigan Advance_
 ]([url](https://michiganadvance.com/2026/06/09/stevens-mcmorrow-el-sayed-clash-over-foreign-policy-party-leadership-as-primary-approaches/?utm_source=chatgpt.com&__cf_chl_f_tk=QDSv4YBHDQoeefRidAgClIaXDmdKHLUzs01UUaRgC9Y-1782798991-1.0.1.1-GSM0auWIIQ_kYpMsuLXQnYXvlMYwap7xHPChDjXdIec))
+
 [Ballotpedia Overview]([url](https://ballotpedia.org/United_States_Senate_election_in_Michigan%2C_2026_%28August_4_Democratic_primary%29?))
 
 ## Main Finding
