@@ -1,4 +1,4 @@
-# Artificial Societies Michigan Senate Trial
+# Artificial Societies Tech Task: 2026 Michigan Senate Race
 
 This experiment tests which Democratic candidate looks strongest against Mike Rogers in a likely 2026 Michigan U.S. Senate general election.
 
