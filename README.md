@@ -114,13 +114,10 @@ The model is closest to polling on McMorrow, somewhat close to Detroit Chamber o
 
 The work moved through a few stages:
 
-1. Built an initial 100-person Michigan electorate.
-2. Ran the three head-to-head survey questions.
-3. Tried weighting, then moved away from relying on it because the sample size was only 100.
-4. Rebuilt the persona file to better match the electorate upfront.
-5. Switched from full-population targets to likely-voter targets using Senate exit polls.
-6. Removed polling from the response inputs and kept it only for validation.
-7. Ran size checks from 300,000 to 300,000,000 question-level responses.
+1. I tried weighting a 100-person sample, but the weights were unstable at that size. I then rebuilt the personas so the raw 100-person electorate mapped more closely to the target population upfront, using extensive quantitative public data.
+2. I used repeated response aggregation. Each persona answered each matchup question ten times, and I used the modal answer to reduce response-level noise.
+3. I tested whether the results were stable at different run sizes. I ran the same repeated-aggregation setup at 100, 1,000, 10,000, and 100,000 trial runs. The core results were stable by the 1,000-trial version.
+4. I verified that multiple runs of the 1000-trial version produced consistent results.
 
 ## Important Limitation
 
