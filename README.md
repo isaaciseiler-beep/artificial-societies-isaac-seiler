@@ -36,15 +36,13 @@ Each question allowed the Democrat, Mike Rogers, or `Undecided`.
 
 ## How The Personas Were Built
 
-I started with 100 personas modeled after Michigan.
-
-The final persona file is calibrated by GPT 5.5 Codex to a likely general-election electorate:
+I built 100 personas modeled after Michigan's population. The final persona file is calibrated by GPT 5.5 Codex to a likely general-election electorate:
 
 - Age: 14 aged 18-29, 21 aged 30-44, 37 aged 45-64, 28 aged 65+
 - Race/ethnicity: 78 White non-Hispanic, 13 Black, 5 Hispanic, 1 Asian, 3 multiracial/other
 - Gender: 54 female, 46 male
 
-Data used to model population:
+I used several reputable sources of qualitative data used to model the synthetic population as accurately as possible:
 
 - Census and ACS (American Community Survey) data for population, county, age, race, gender, education, and income context
 - Recent Michigan Senate exit polls to adjust from full population toward likely voters
