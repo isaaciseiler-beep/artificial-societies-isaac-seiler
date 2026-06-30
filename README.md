@@ -1,0 +1,143 @@
+# Artificial Societies Michigan Senate Trial
+
+This repo tests one decision: which Democratic candidate looks strongest against Mike Rogers in a likely 2026 Michigan U.S. Senate general election.
+
+I modeled likely Michigan general-election voters, not Democratic primary voters. The goal was to stress-test general-election viability before better polling exists.
+
+## Why Michigan
+
+I chose Michigan because I have worked in Michigan politics and saw how hard it is to get useful public opinion data. Private polling is expensive, and smaller campaigns often either spend a large share of their budget on it or go without it.
+
+This is the type of problem where synthetic electorates can be useful: not as a replacement for polling, but as a way to test assumptions before better data exists.
+
+## Main Finding
+
+The model points to Haley Stevens as the strongest general-election candidate.
+
+- Stevens performs best against Rogers.
+- McMorrow is close to Rogers, but with the largest undecided pool.
+- El-Sayed performs weakest against Rogers in this general-election electorate.
+
+This is not a primary forecast. El-Sayed may be strong with Democratic primary voters while still looking weaker with a broader general electorate.
+
+## Survey Questions
+
+Each persona answered these single-select questions:
+
+1. If the general election for Michigan's 2026 U.S. Senate race were held today and the candidates were Abdul El-Sayed and Mike Rogers, who would you most likely support?
+2. If the general election for Michigan's 2026 U.S. Senate race were held today and the candidates were Haley Stevens and Mike Rogers, who would you most likely support?
+3. If the general election for Michigan's 2026 U.S. Senate race were held today and the candidates were Mallory McMorrow and Mike Rogers, who would you most likely support?
+
+Each question allowed the Democrat, Mike Rogers, or `Undecided`.
+
+## How The Personas Were Built
+
+I started with 100 personas modeled after Michigan.
+
+The final persona file is calibrated to a likely general-election electorate:
+
+- Age: 14 aged 18-29, 21 aged 30-44, 37 aged 45-64, 28 aged 65+
+- Race/ethnicity: 78 White non-Hispanic, 13 Black, 5 Hispanic, 1 Asian, 3 multiracial/other
+- Gender: 54 female, 46 male
+
+Data used:
+
+- Census and ACS data for population, county, age, race, gender, education, and income context
+- Recent Michigan Senate exit polls to adjust from full population toward likely voters
+- Election returns and geography to make county and region choices more realistic
+- Candidate materials, local reporting, FEC data, and issue context to shape candidate fit
+
+The raw source files are kept locally in `Data/`, but that folder is not tracked in git because it contains large PDFs, ZIPs, and spreadsheets. The public repo keeps the code, final personas, generated results, and documentation.
+
+Each persona has a county, region, age, race/ethnicity, gender, education, income band, party lean, ideology, past voting pattern, turnout likelihood, top issues, and a short profile.
+
+## Weighting
+
+I initially tried weighting because a 100-person sample can drift quickly.
+
+The problem was that with only 100 personas, weights could end up doing too much work. So I changed the approach: instead of relying on heavy weights, I adjusted the raw 100-person file to match the target electorate upfront.
+
+The weighting code still exists as a check, but every final persona has:
+
+```text
+persona_weight = 1.000000
+```
+
+So the current results are effectively unweighted. Weighted and unweighted outputs are identical.
+
+## How The Run Works
+
+The main run uses:
+
+```text
+100 personas
+x 3 matchup questions
+x 10 repeated answers per persona-question
+x 1,000 trial runs
+= 3,000,000 question-level simulated responses
+```
+
+For each persona-question pair, the persona answers 10 times with stable variation. The most common answer becomes that persona's answer for that trial. This reduces completion-level noise without changing the persona set.
+
+## Run Size Check
+
+I tested smaller and larger versions of the same experiment. These runs use the same personas and questions, but different trial counts. They also use separate trial-id ranges, so they are independent experiments.
+
+| Size | Trial runs | Question-level runs | El-Sayed margin | Stevens margin | McMorrow margin |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 10% current | 100 | 300,000 | -6.5 | +17.4 | 0.0 |
+| Current | 1,000 | 3,000,000 | -6.6 | +17.7 | -0.2 |
+| 1000% current | 10,000 | 30,000,000 | -6.6 | +17.7 | -0.1 |
+| 10000% current | 100,000 | 300,000,000 | -6.6 | +17.7 | -0.1 |
+
+The 1,000-run version is the main version because it is much cheaper than the very large runs and already stable. Going from 10,000 to 100,000 runs did not change the one-decimal margins.
+
+## Polling Check
+
+Polling is not used in the persona answers. It is only used afterward as a check.
+
+| Matchup | 10000% run | RCP margin | Detroit Chamber margin |
+| --- | ---: | ---: | ---: |
+| El-Sayed vs Rogers | -6.6 | +0.3 | -4.9 |
+| Stevens vs Rogers | +17.7 | +0.4 | -2.3 |
+| McMorrow vs Rogers | -0.1 | -0.4 | -2.1 |
+
+The model is closest to polling on McMorrow, somewhat close to Detroit Chamber on El-Sayed, and much more bullish on Stevens than either polling source.
+
+## Iteration
+
+The work moved through a few stages:
+
+1. Built an initial 100-person Michigan electorate.
+2. Ran the three head-to-head survey questions.
+3. Tried weighting, then moved away from relying on it because the sample size was only 100.
+4. Rebuilt the persona file to better match the electorate upfront.
+5. Switched from full-population targets to likely-voter targets using Senate exit polls.
+6. Removed polling from the response inputs and kept it only for validation.
+7. Ran size checks from 300,000 to 300,000,000 question-level responses.
+
+## Important Limitation
+
+The personas are built from public data, not real voter interviews.
+
+Census, ACS, election returns, local reporting, candidate positions, and FEC data create useful context, but they cannot fully replace a high-quality voter panel or recent Michigan-specific survey data. If I had more time or access, I would add interviews with real Michigan voters and use those to improve the profiles.
+
+I also saw one important LLM failure during iteration: when polling was present in the working context, the assistant sometimes tried to steer the model toward what looked like the "correct" polling answer. I removed polling from the persona-response side and kept it only as a final validation check.
+
+## Run
+
+```bash
+python3 persona_trials/trial_001_general_electorate/run_persona_trial_1000x.py
+```
+
+Generated outputs are written to `persona_trials/trial_001_general_electorate/results/`.
+
+## Main Files
+
+- `Data/`: source dataset
+- `Data/`: raw source dataset, kept locally and ignored by git because of file size
+- `persona_trials/trial_001_general_electorate/personas_100.csv`: final 100-person persona file
+- `persona_trials/trial_001_general_electorate/personas_100.json`: same personas as JSON
+- `persona_trials/trial_001_general_electorate/run_persona_trial.py`: persona scoring and trial logic
+- `persona_trials/trial_001_general_electorate/run_persona_trial_1000x.py`: main aggregate runner and polling comparison
+- `persona_trials/trial_001_general_electorate/results/EXPERIMENT_SIZE_COMPARISON.md`: run-size comparison

@@ -1,0 +1,283 @@
+subgroup_field,subgroup_value,question_id,selected_answer,count,pct,weighted_count,weighted_pct
+age_group,18-29,q1_elsayed_vs_rogers,Mike Rogers,5697,40.7,5697.0,40.7
+age_group,18-29,q1_elsayed_vs_rogers,Undecided,5303,37.9,5303.0,37.9
+age_group,18-29,q1_elsayed_vs_rogers,Abdul El-Sayed,3000,21.4,3000.0,21.4
+age_group,18-29,q2_stevens_vs_rogers,Undecided,6697,47.8,6697.0,47.8
+age_group,18-29,q2_stevens_vs_rogers,Mike Rogers,4001,28.6,4001.0,28.6
+age_group,18-29,q2_stevens_vs_rogers,Haley Stevens,3302,23.6,3302.0,23.6
+age_group,18-29,q3_mcmorrow_vs_rogers,Undecided,5909,42.2,5909.0,42.2
+age_group,18-29,q3_mcmorrow_vs_rogers,Mike Rogers,4969,35.5,4969.0,35.5
+age_group,18-29,q3_mcmorrow_vs_rogers,Mallory McMorrow,3122,22.3,3122.0,22.3
+age_group,30-44,q1_elsayed_vs_rogers,Abdul El-Sayed,9000,42.9,9000.0,42.9
+age_group,30-44,q1_elsayed_vs_rogers,Mike Rogers,6131,29.2,6131.0,29.2
+age_group,30-44,q1_elsayed_vs_rogers,Undecided,5869,27.9,5869.0,27.9
+age_group,30-44,q2_stevens_vs_rogers,Haley Stevens,11955,56.9,11955.0,56.9
+age_group,30-44,q2_stevens_vs_rogers,Undecided,6045,28.8,6045.0,28.8
+age_group,30-44,q2_stevens_vs_rogers,Mike Rogers,3000,14.3,3000.0,14.3
+age_group,30-44,q3_mcmorrow_vs_rogers,Mallory McMorrow,9571,45.6,9571.0,45.6
+age_group,30-44,q3_mcmorrow_vs_rogers,Undecided,8418,40.1,8418.0,40.1
+age_group,30-44,q3_mcmorrow_vs_rogers,Mike Rogers,3011,14.3,3011.0,14.3
+age_group,45-64,q1_elsayed_vs_rogers,Undecided,15448,41.8,15448.0,41.8
+age_group,45-64,q1_elsayed_vs_rogers,Mike Rogers,11269,30.5,11269.0,30.5
+age_group,45-64,q1_elsayed_vs_rogers,Abdul El-Sayed,10283,27.8,10283.0,27.8
+age_group,45-64,q2_stevens_vs_rogers,Haley Stevens,21809,58.9,21809.0,58.9
+age_group,45-64,q2_stevens_vs_rogers,Mike Rogers,10000,27.0,10000.0,27.0
+age_group,45-64,q2_stevens_vs_rogers,Undecided,5191,14.0,5191.0,14.0
+age_group,45-64,q3_mcmorrow_vs_rogers,Undecided,16638,45.0,16638.0,45.0
+age_group,45-64,q3_mcmorrow_vs_rogers,Mallory McMorrow,10348,28.0,10348.0,28.0
+age_group,45-64,q3_mcmorrow_vs_rogers,Mike Rogers,10014,27.1,10014.0,27.1
+age_group,65+,q1_elsayed_vs_rogers,Mike Rogers,14803,52.9,14803.0,52.9
+age_group,65+,q1_elsayed_vs_rogers,Abdul El-Sayed,9000,32.1,9000.0,32.1
+age_group,65+,q1_elsayed_vs_rogers,Undecided,4197,15.0,4197.0,15.0
+age_group,65+,q2_stevens_vs_rogers,Mike Rogers,14000,50.0,14000.0,50.0
+age_group,65+,q2_stevens_vs_rogers,Haley Stevens,11521,41.1,11521.0,41.1
+age_group,65+,q2_stevens_vs_rogers,Undecided,2479,8.9,2479.0,8.9
+age_group,65+,q3_mcmorrow_vs_rogers,Mike Rogers,14145,50.5,14145.0,50.5
+age_group,65+,q3_mcmorrow_vs_rogers,Mallory McMorrow,9000,32.1,9000.0,32.1
+age_group,65+,q3_mcmorrow_vs_rogers,Undecided,4855,17.3,4855.0,17.3
+education,College degree,q1_elsayed_vs_rogers,Mike Rogers,12382,39.9,12382.0,39.9
+education,College degree,q1_elsayed_vs_rogers,Undecided,11610,37.5,11610.0,37.5
+education,College degree,q1_elsayed_vs_rogers,Abdul El-Sayed,7008,22.6,7008.0,22.6
+education,College degree,q2_stevens_vs_rogers,Haley Stevens,13918,44.9,13918.0,44.9
+education,College degree,q2_stevens_vs_rogers,Mike Rogers,10000,32.3,10000.0,32.3
+education,College degree,q2_stevens_vs_rogers,Undecided,7082,22.8,7082.0,22.8
+education,College degree,q3_mcmorrow_vs_rogers,Undecided,13958,45.0,13958.0,45.0
+education,College degree,q3_mcmorrow_vs_rogers,Mike Rogers,10014,32.3,10014.0,32.3
+education,College degree,q3_mcmorrow_vs_rogers,Mallory McMorrow,7028,22.7,7028.0,22.7
+education,High school or less,q1_elsayed_vs_rogers,Mike Rogers,12821,37.7,12821.0,37.7
+education,High school or less,q1_elsayed_vs_rogers,Abdul El-Sayed,12000,35.3,12000.0,35.3
+education,High school or less,q1_elsayed_vs_rogers,Undecided,9179,27.0,9179.0,27.0
+education,High school or less,q2_stevens_vs_rogers,Haley Stevens,17634,51.9,17634.0,51.9
+education,High school or less,q2_stevens_vs_rogers,Mike Rogers,11000,32.4,11000.0,32.4
+education,High school or less,q2_stevens_vs_rogers,Undecided,5366,15.8,5366.0,15.8
+education,High school or less,q3_mcmorrow_vs_rogers,Mallory McMorrow,12030,35.4,12030.0,35.4
+education,High school or less,q3_mcmorrow_vs_rogers,Mike Rogers,11156,32.8,11156.0,32.8
+education,High school or less,q3_mcmorrow_vs_rogers,Undecided,10814,31.8,10814.0,31.8
+education,Postgraduate,q1_elsayed_vs_rogers,Abdul El-Sayed,5000,100.0,5000.0,100.0
+education,Postgraduate,q2_stevens_vs_rogers,Haley Stevens,5000,100.0,5000.0,100.0
+education,Postgraduate,q3_mcmorrow_vs_rogers,Mallory McMorrow,5000,100.0,5000.0,100.0
+education,Some college,q1_elsayed_vs_rogers,Mike Rogers,12697,42.3,12697.0,42.3
+education,Some college,q1_elsayed_vs_rogers,Undecided,10028,33.4,10028.0,33.4
+education,Some college,q1_elsayed_vs_rogers,Abdul El-Sayed,7275,24.2,7275.0,24.2
+education,Some college,q2_stevens_vs_rogers,Haley Stevens,12035,40.1,12035.0,40.1
+education,Some college,q2_stevens_vs_rogers,Mike Rogers,10001,33.3,10001.0,33.3
+education,Some college,q2_stevens_vs_rogers,Undecided,7964,26.5,7964.0,26.5
+education,Some college,q3_mcmorrow_vs_rogers,Undecided,11048,36.8,11048.0,36.8
+education,Some college,q3_mcmorrow_vs_rogers,Mike Rogers,10969,36.6,10969.0,36.6
+education,Some college,q3_mcmorrow_vs_rogers,Mallory McMorrow,7983,26.6,7983.0,26.6
+ideology,Conservative,q1_elsayed_vs_rogers,Mike Rogers,15802,98.8,15802.0,98.8
+ideology,Conservative,q1_elsayed_vs_rogers,Undecided,198,1.2,198.0,1.2
+ideology,Conservative,q2_stevens_vs_rogers,Mike Rogers,15000,93.8,15000.0,93.8
+ideology,Conservative,q2_stevens_vs_rogers,Undecided,1000,6.2,1000.0,6.2
+ideology,Conservative,q3_mcmorrow_vs_rogers,Mike Rogers,15143,94.6,15143.0,94.6
+ideology,Conservative,q3_mcmorrow_vs_rogers,Undecided,857,5.4,857.0,5.4
+ideology,Liberal,q1_elsayed_vs_rogers,Abdul El-Sayed,15000,100.0,15000.0,100.0
+ideology,Liberal,q2_stevens_vs_rogers,Haley Stevens,15000,100.0,15000.0,100.0
+ideology,Liberal,q3_mcmorrow_vs_rogers,Mallory McMorrow,15000,100.0,15000.0,100.0
+ideology,Moderate,q1_elsayed_vs_rogers,Undecided,30619,69.6,30619.0,69.6
+ideology,Moderate,q1_elsayed_vs_rogers,Mike Rogers,8098,18.4,8098.0,18.4
+ideology,Moderate,q1_elsayed_vs_rogers,Abdul El-Sayed,5283,12.0,5283.0,12.0
+ideology,Moderate,q2_stevens_vs_rogers,Haley Stevens,22587,51.3,22587.0,51.3
+ideology,Moderate,q2_stevens_vs_rogers,Undecided,19412,44.1,19412.0,44.1
+ideology,Moderate,q2_stevens_vs_rogers,Mike Rogers,2001,4.5,2001.0,4.5
+ideology,Moderate,q3_mcmorrow_vs_rogers,Undecided,34963,79.5,34963.0,79.5
+ideology,Moderate,q3_mcmorrow_vs_rogers,Mallory McMorrow,6041,13.7,6041.0,13.7
+ideology,Moderate,q3_mcmorrow_vs_rogers,Mike Rogers,2996,6.8,2996.0,6.8
+ideology,Progressive,q1_elsayed_vs_rogers,Abdul El-Sayed,11000,100.0,11000.0,100.0
+ideology,Progressive,q2_stevens_vs_rogers,Haley Stevens,11000,100.0,11000.0,100.0
+ideology,Progressive,q3_mcmorrow_vs_rogers,Mallory McMorrow,11000,100.0,11000.0,100.0
+ideology,Very conservative,q1_elsayed_vs_rogers,Mike Rogers,14000,100.0,14000.0,100.0
+ideology,Very conservative,q2_stevens_vs_rogers,Mike Rogers,14000,100.0,14000.0,100.0
+ideology,Very conservative,q3_mcmorrow_vs_rogers,Mike Rogers,14000,100.0,14000.0,100.0
+income_band,Low,q1_elsayed_vs_rogers,Abdul El-Sayed,4000,66.7,4000.0,66.7
+income_band,Low,q1_elsayed_vs_rogers,Mike Rogers,2000,33.3,2000.0,33.3
+income_band,Low,q2_stevens_vs_rogers,Haley Stevens,4000,66.7,4000.0,66.7
+income_band,Low,q2_stevens_vs_rogers,Mike Rogers,2000,33.3,2000.0,33.3
+income_band,Low,q3_mcmorrow_vs_rogers,Mallory McMorrow,4000,66.7,4000.0,66.7
+income_band,Low,q3_mcmorrow_vs_rogers,Mike Rogers,2000,33.3,2000.0,33.3
+income_band,Lower-middle,q1_elsayed_vs_rogers,Undecided,10979,39.2,10979.0,39.2
+income_band,Lower-middle,q1_elsayed_vs_rogers,Abdul El-Sayed,10008,35.7,10008.0,35.7
+income_band,Lower-middle,q1_elsayed_vs_rogers,Mike Rogers,7013,25.0,7013.0,25.0
+income_band,Lower-middle,q2_stevens_vs_rogers,Haley Stevens,14164,50.6,14164.0,50.6
+income_band,Lower-middle,q2_stevens_vs_rogers,Undecided,8835,31.6,8835.0,31.6
+income_band,Lower-middle,q2_stevens_vs_rogers,Mike Rogers,5001,17.9,5001.0,17.9
+income_band,Lower-middle,q3_mcmorrow_vs_rogers,Undecided,11872,42.4,11872.0,42.4
+income_band,Lower-middle,q3_mcmorrow_vs_rogers,Mallory McMorrow,10126,36.2,10126.0,36.2
+income_band,Lower-middle,q3_mcmorrow_vs_rogers,Mike Rogers,6002,21.4,6002.0,21.4
+income_band,Middle,q1_elsayed_vs_rogers,Mike Rogers,22883,50.9,22883.0,50.9
+income_band,Middle,q1_elsayed_vs_rogers,Undecided,12842,28.5,12842.0,28.5
+income_band,Middle,q1_elsayed_vs_rogers,Abdul El-Sayed,9275,20.6,9275.0,20.6
+income_band,Middle,q2_stevens_vs_rogers,Mike Rogers,19000,42.2,19000.0,42.2
+income_band,Middle,q2_stevens_vs_rogers,Haley Stevens,17677,39.3,17677.0,39.3
+income_band,Middle,q2_stevens_vs_rogers,Undecided,8323,18.5,8323.0,18.5
+income_band,Middle,q3_mcmorrow_vs_rogers,Mike Rogers,19168,42.6,19168.0,42.6
+income_band,Middle,q3_mcmorrow_vs_rogers,Undecided,15946,35.4,15946.0,35.4
+income_band,Middle,q3_mcmorrow_vs_rogers,Mallory McMorrow,9886,22.0,9886.0,22.0
+income_band,Upper-middle,q1_elsayed_vs_rogers,Abdul El-Sayed,8000,38.1,8000.0,38.1
+income_band,Upper-middle,q1_elsayed_vs_rogers,Undecided,6996,33.3,6996.0,33.3
+income_band,Upper-middle,q1_elsayed_vs_rogers,Mike Rogers,6004,28.6,6004.0,28.6
+income_band,Upper-middle,q2_stevens_vs_rogers,Haley Stevens,12746,60.7,12746.0,60.7
+income_band,Upper-middle,q2_stevens_vs_rogers,Mike Rogers,5000,23.8,5000.0,23.8
+income_band,Upper-middle,q2_stevens_vs_rogers,Undecided,3254,15.5,3254.0,15.5
+income_band,Upper-middle,q3_mcmorrow_vs_rogers,Mallory McMorrow,8029,38.2,8029.0,38.2
+income_band,Upper-middle,q3_mcmorrow_vs_rogers,Undecided,8002,38.1,8002.0,38.1
+income_band,Upper-middle,q3_mcmorrow_vs_rogers,Mike Rogers,4969,23.7,4969.0,23.7
+party_lean,Independent / swing,q1_elsayed_vs_rogers,Undecided,30817,81.1,30817.0,81.1
+party_lean,Independent / swing,q1_elsayed_vs_rogers,Mike Rogers,5900,15.5,5900.0,15.5
+party_lean,Independent / swing,q1_elsayed_vs_rogers,Abdul El-Sayed,1283,3.4,1283.0,3.4
+party_lean,Independent / swing,q2_stevens_vs_rogers,Undecided,19413,51.1,19413.0,51.1
+party_lean,Independent / swing,q2_stevens_vs_rogers,Haley Stevens,18587,48.9,18587.0,48.9
+party_lean,Independent / swing,q3_mcmorrow_vs_rogers,Undecided,35789,94.2,35789.0,94.2
+party_lean,Independent / swing,q3_mcmorrow_vs_rogers,Mallory McMorrow,2041,5.4,2041.0,5.4
+party_lean,Independent / swing,q3_mcmorrow_vs_rogers,Mike Rogers,170,0.4,170.0,0.4
+party_lean,Lean Democrat,q1_elsayed_vs_rogers,Abdul El-Sayed,15000,100.0,15000.0,100.0
+party_lean,Lean Democrat,q2_stevens_vs_rogers,Haley Stevens,15000,100.0,15000.0,100.0
+party_lean,Lean Democrat,q3_mcmorrow_vs_rogers,Mallory McMorrow,15000,100.0,15000.0,100.0
+party_lean,Lean Republican,q1_elsayed_vs_rogers,Mike Rogers,14000,100.0,14000.0,100.0
+party_lean,Lean Republican,q2_stevens_vs_rogers,Mike Rogers,13001,92.9,13001.0,92.9
+party_lean,Lean Republican,q2_stevens_vs_rogers,Undecided,999,7.1,999.0,7.1
+party_lean,Lean Republican,q3_mcmorrow_vs_rogers,Mike Rogers,13969,99.8,13969.0,99.8
+party_lean,Lean Republican,q3_mcmorrow_vs_rogers,Undecided,31,0.2,31.0,0.2
+party_lean,Strong Democrat,q1_elsayed_vs_rogers,Abdul El-Sayed,15000,100.0,15000.0,100.0
+party_lean,Strong Democrat,q2_stevens_vs_rogers,Haley Stevens,15000,100.0,15000.0,100.0
+party_lean,Strong Democrat,q3_mcmorrow_vs_rogers,Mallory McMorrow,15000,100.0,15000.0,100.0
+party_lean,Strong Republican,q1_elsayed_vs_rogers,Mike Rogers,18000,100.0,18000.0,100.0
+party_lean,Strong Republican,q2_stevens_vs_rogers,Mike Rogers,18000,100.0,18000.0,100.0
+party_lean,Strong Republican,q3_mcmorrow_vs_rogers,Mike Rogers,18000,100.0,18000.0,100.0
+race_ethnicity,Asian,q1_elsayed_vs_rogers,Abdul El-Sayed,1000,100.0,1000.0,100.0
+race_ethnicity,Asian,q2_stevens_vs_rogers,Haley Stevens,1000,100.0,1000.0,100.0
+race_ethnicity,Asian,q3_mcmorrow_vs_rogers,Mallory McMorrow,1000,100.0,1000.0,100.0
+race_ethnicity,Black,q1_elsayed_vs_rogers,Abdul El-Sayed,11000,84.6,11000.0,84.6
+race_ethnicity,Black,q1_elsayed_vs_rogers,Mike Rogers,1000,7.7,1000.0,7.7
+race_ethnicity,Black,q1_elsayed_vs_rogers,Undecided,1000,7.7,1000.0,7.7
+race_ethnicity,Black,q2_stevens_vs_rogers,Haley Stevens,11095,85.3,11095.0,85.3
+race_ethnicity,Black,q2_stevens_vs_rogers,Undecided,1905,14.7,1905.0,14.7
+race_ethnicity,Black,q3_mcmorrow_vs_rogers,Mallory McMorrow,11000,84.6,11000.0,84.6
+race_ethnicity,Black,q3_mcmorrow_vs_rogers,Undecided,2000,15.4,2000.0,15.4
+race_ethnicity,Hispanic,q1_elsayed_vs_rogers,Abdul El-Sayed,3000,60.0,3000.0,60.0
+race_ethnicity,Hispanic,q1_elsayed_vs_rogers,Undecided,2000,40.0,2000.0,40.0
+race_ethnicity,Hispanic,q2_stevens_vs_rogers,Haley Stevens,3679,73.6,3679.0,73.6
+race_ethnicity,Hispanic,q2_stevens_vs_rogers,Undecided,1321,26.4,1321.0,26.4
+race_ethnicity,Hispanic,q3_mcmorrow_vs_rogers,Mallory McMorrow,3000,60.0,3000.0,60.0
+race_ethnicity,Hispanic,q3_mcmorrow_vs_rogers,Undecided,2000,40.0,2000.0,40.0
+race_ethnicity,Multiracial / other,q1_elsayed_vs_rogers,Mike Rogers,1794,59.8,1794.0,59.8
+race_ethnicity,Multiracial / other,q1_elsayed_vs_rogers,Undecided,1206,40.2,1206.0,40.2
+race_ethnicity,Multiracial / other,q2_stevens_vs_rogers,Undecided,1626,54.2,1626.0,54.2
+race_ethnicity,Multiracial / other,q2_stevens_vs_rogers,Mike Rogers,1000,33.3,1000.0,33.3
+race_ethnicity,Multiracial / other,q2_stevens_vs_rogers,Haley Stevens,374,12.5,374.0,12.5
+race_ethnicity,Multiracial / other,q3_mcmorrow_vs_rogers,Undecided,1986,66.2,1986.0,66.2
+race_ethnicity,Multiracial / other,q3_mcmorrow_vs_rogers,Mike Rogers,1014,33.8,1014.0,33.8
+race_ethnicity,White non-Hispanic,q1_elsayed_vs_rogers,Mike Rogers,35106,45.0,35106.0,45.0
+race_ethnicity,White non-Hispanic,q1_elsayed_vs_rogers,Undecided,26611,34.1,26611.0,34.1
+race_ethnicity,White non-Hispanic,q1_elsayed_vs_rogers,Abdul El-Sayed,16283,20.9,16283.0,20.9
+race_ethnicity,White non-Hispanic,q2_stevens_vs_rogers,Haley Stevens,32439,41.6,32439.0,41.6
+race_ethnicity,White non-Hispanic,q2_stevens_vs_rogers,Mike Rogers,30001,38.5,30001.0,38.5
+race_ethnicity,White non-Hispanic,q2_stevens_vs_rogers,Undecided,15560,19.9,15560.0,19.9
+race_ethnicity,White non-Hispanic,q3_mcmorrow_vs_rogers,Mike Rogers,31125,39.9,31125.0,39.9
+race_ethnicity,White non-Hispanic,q3_mcmorrow_vs_rogers,Undecided,29834,38.2,29834.0,38.2
+race_ethnicity,White non-Hispanic,q3_mcmorrow_vs_rogers,Mallory McMorrow,17041,21.8,17041.0,21.8
+region,Ann Arbor / Washtenaw,q1_elsayed_vs_rogers,Abdul El-Sayed,2000,50.0,2000.0,50.0
+region,Ann Arbor / Washtenaw,q1_elsayed_vs_rogers,Undecided,2000,50.0,2000.0,50.0
+region,Ann Arbor / Washtenaw,q2_stevens_vs_rogers,Haley Stevens,4000,100.0,4000.0,100.0
+region,Ann Arbor / Washtenaw,q3_mcmorrow_vs_rogers,Mallory McMorrow,2000,50.0,2000.0,50.0
+region,Ann Arbor / Washtenaw,q3_mcmorrow_vs_rogers,Undecided,2000,50.0,2000.0,50.0
+region,Detroit / Wayne,q1_elsayed_vs_rogers,Abdul El-Sayed,14283,75.2,14283.0,75.2
+region,Detroit / Wayne,q1_elsayed_vs_rogers,Undecided,3915,20.6,3915.0,20.6
+region,Detroit / Wayne,q1_elsayed_vs_rogers,Mike Rogers,802,4.2,802.0,4.2
+region,Detroit / Wayne,q2_stevens_vs_rogers,Haley Stevens,17002,89.5,17002.0,89.5
+region,Detroit / Wayne,q2_stevens_vs_rogers,Undecided,1998,10.5,1998.0,10.5
+region,Detroit / Wayne,q3_mcmorrow_vs_rogers,Mallory McMorrow,14319,75.4,14319.0,75.4
+region,Detroit / Wayne,q3_mcmorrow_vs_rogers,Undecided,4538,23.9,4538.0,23.9
+region,Detroit / Wayne,q3_mcmorrow_vs_rogers,Mike Rogers,143,0.8,143.0,0.8
+region,Detroit suburbs,q1_elsayed_vs_rogers,Mike Rogers,9154,39.8,9154.0,39.8
+region,Detroit suburbs,q1_elsayed_vs_rogers,Undecided,7846,34.1,7846.0,34.1
+region,Detroit suburbs,q1_elsayed_vs_rogers,Abdul El-Sayed,6000,26.1,6000.0,26.1
+region,Detroit suburbs,q2_stevens_vs_rogers,Haley Stevens,12908,56.1,12908.0,56.1
+region,Detroit suburbs,q2_stevens_vs_rogers,Mike Rogers,8000,34.8,8000.0,34.8
+region,Detroit suburbs,q2_stevens_vs_rogers,Undecided,2092,9.1,2092.0,9.1
+region,Detroit suburbs,q3_mcmorrow_vs_rogers,Undecided,8404,36.5,8404.0,36.5
+region,Detroit suburbs,q3_mcmorrow_vs_rogers,Mike Rogers,8000,34.8,8000.0,34.8
+region,Detroit suburbs,q3_mcmorrow_vs_rogers,Mallory McMorrow,6596,28.7,6596.0,28.7
+region,Flint / Saginaw / Bay,q1_elsayed_vs_rogers,Undecided,3988,66.5,3988.0,66.5
+region,Flint / Saginaw / Bay,q1_elsayed_vs_rogers,Abdul El-Sayed,2000,33.3,2000.0,33.3
+region,Flint / Saginaw / Bay,q1_elsayed_vs_rogers,Mike Rogers,12,0.2,12.0,0.2
+region,Flint / Saginaw / Bay,q2_stevens_vs_rogers,Haley Stevens,3243,54.0,3243.0,54.0
+region,Flint / Saginaw / Bay,q2_stevens_vs_rogers,Undecided,2757,46.0,2757.0,46.0
+region,Flint / Saginaw / Bay,q3_mcmorrow_vs_rogers,Undecided,3996,66.6,3996.0,66.6
+region,Flint / Saginaw / Bay,q3_mcmorrow_vs_rogers,Mallory McMorrow,2004,33.4,2004.0,33.4
+region,Lansing / Ingham,q1_elsayed_vs_rogers,Abdul El-Sayed,2000,66.7,2000.0,66.7
+region,Lansing / Ingham,q1_elsayed_vs_rogers,Undecided,1000,33.3,1000.0,33.3
+region,Lansing / Ingham,q2_stevens_vs_rogers,Haley Stevens,2000,66.7,2000.0,66.7
+region,Lansing / Ingham,q2_stevens_vs_rogers,Undecided,1000,33.3,1000.0,33.3
+region,Lansing / Ingham,q3_mcmorrow_vs_rogers,Mallory McMorrow,2122,70.7,2122.0,70.7
+region,Lansing / Ingham,q3_mcmorrow_vs_rogers,Undecided,878,29.3,878.0,29.3
+region,Northern Michigan,q1_elsayed_vs_rogers,Abdul El-Sayed,2000,50.0,2000.0,50.0
+region,Northern Michigan,q1_elsayed_vs_rogers,Mike Rogers,1980,49.5,1980.0,49.5
+region,Northern Michigan,q1_elsayed_vs_rogers,Undecided,20,0.5,20.0,0.5
+region,Northern Michigan,q2_stevens_vs_rogers,Haley Stevens,2005,50.1,2005.0,50.1
+region,Northern Michigan,q2_stevens_vs_rogers,Mike Rogers,1000,25.0,1000.0,25.0
+region,Northern Michigan,q2_stevens_vs_rogers,Undecided,995,24.9,995.0,24.9
+region,Northern Michigan,q3_mcmorrow_vs_rogers,Mallory McMorrow,2000,50.0,2000.0,50.0
+region,Northern Michigan,q3_mcmorrow_vs_rogers,Mike Rogers,1000,25.0,1000.0,25.0
+region,Northern Michigan,q3_mcmorrow_vs_rogers,Undecided,1000,25.0,1000.0,25.0
+region,Rural / outstate,q1_elsayed_vs_rogers,Mike Rogers,19001,76.0,19001.0,76.0
+region,Rural / outstate,q1_elsayed_vs_rogers,Undecided,5999,24.0,5999.0,24.0
+region,Rural / outstate,q2_stevens_vs_rogers,Mike Rogers,17000,68.0,17000.0,68.0
+region,Rural / outstate,q2_stevens_vs_rogers,Undecided,5571,22.3,5571.0,22.3
+region,Rural / outstate,q2_stevens_vs_rogers,Haley Stevens,2429,9.7,2429.0,9.7
+region,Rural / outstate,q3_mcmorrow_vs_rogers,Mike Rogers,17013,68.1,17013.0,68.1
+region,Rural / outstate,q3_mcmorrow_vs_rogers,Undecided,7987,31.9,7987.0,31.9
+region,Upper Peninsula,q1_elsayed_vs_rogers,Undecided,1000,100.0,1000.0,100.0
+region,Upper Peninsula,q2_stevens_vs_rogers,Haley Stevens,664,66.4,664.0,66.4
+region,Upper Peninsula,q2_stevens_vs_rogers,Undecided,336,33.6,336.0,33.6
+region,Upper Peninsula,q3_mcmorrow_vs_rogers,Undecided,1000,100.0,1000.0,100.0
+region,West Michigan,q1_elsayed_vs_rogers,Mike Rogers,6951,46.3,6951.0,46.3
+region,West Michigan,q1_elsayed_vs_rogers,Undecided,5049,33.7,5049.0,33.7
+region,West Michigan,q1_elsayed_vs_rogers,Abdul El-Sayed,3000,20.0,3000.0,20.0
+region,West Michigan,q2_stevens_vs_rogers,Undecided,5663,37.8,5663.0,37.8
+region,West Michigan,q2_stevens_vs_rogers,Mike Rogers,5001,33.3,5001.0,33.3
+region,West Michigan,q2_stevens_vs_rogers,Haley Stevens,4336,28.9,4336.0,28.9
+region,West Michigan,q3_mcmorrow_vs_rogers,Undecided,6017,40.1,6017.0,40.1
+region,West Michigan,q3_mcmorrow_vs_rogers,Mike Rogers,5983,39.9,5983.0,39.9
+region,West Michigan,q3_mcmorrow_vs_rogers,Mallory McMorrow,3000,20.0,3000.0,20.0
+urban_suburban_rural,mixed,q1_elsayed_vs_rogers,Undecided,9037,43.0,9037.0,43.0
+urban_suburban_rural,mixed,q1_elsayed_vs_rogers,Mike Rogers,6963,33.2,6963.0,33.2
+urban_suburban_rural,mixed,q1_elsayed_vs_rogers,Abdul El-Sayed,5000,23.8,5000.0,23.8
+urban_suburban_rural,mixed,q2_stevens_vs_rogers,Undecided,8420,40.1,8420.0,40.1
+urban_suburban_rural,mixed,q2_stevens_vs_rogers,Haley Stevens,7579,36.1,7579.0,36.1
+urban_suburban_rural,mixed,q2_stevens_vs_rogers,Mike Rogers,5001,23.8,5001.0,23.8
+urban_suburban_rural,mixed,q3_mcmorrow_vs_rogers,Undecided,10013,47.7,10013.0,47.7
+urban_suburban_rural,mixed,q3_mcmorrow_vs_rogers,Mike Rogers,5983,28.5,5983.0,28.5
+urban_suburban_rural,mixed,q3_mcmorrow_vs_rogers,Mallory McMorrow,5004,23.8,5004.0,23.8
+urban_suburban_rural,rural/small-town,q1_elsayed_vs_rogers,Mike Rogers,20981,69.9,20981.0,69.9
+urban_suburban_rural,rural/small-town,q1_elsayed_vs_rogers,Undecided,7019,23.4,7019.0,23.4
+urban_suburban_rural,rural/small-town,q1_elsayed_vs_rogers,Abdul El-Sayed,2000,6.7,2000.0,6.7
+urban_suburban_rural,rural/small-town,q2_stevens_vs_rogers,Mike Rogers,18000,60.0,18000.0,60.0
+urban_suburban_rural,rural/small-town,q2_stevens_vs_rogers,Undecided,6902,23.0,6902.0,23.0
+urban_suburban_rural,rural/small-town,q2_stevens_vs_rogers,Haley Stevens,5098,17.0,5098.0,17.0
+urban_suburban_rural,rural/small-town,q3_mcmorrow_vs_rogers,Mike Rogers,18013,60.0,18013.0,60.0
+urban_suburban_rural,rural/small-town,q3_mcmorrow_vs_rogers,Undecided,9987,33.3,9987.0,33.3
+urban_suburban_rural,rural/small-town,q3_mcmorrow_vs_rogers,Mallory McMorrow,2000,6.7,2000.0,6.7
+urban_suburban_rural,suburban,q1_elsayed_vs_rogers,Mike Rogers,9154,39.8,9154.0,39.8
+urban_suburban_rural,suburban,q1_elsayed_vs_rogers,Undecided,7846,34.1,7846.0,34.1
+urban_suburban_rural,suburban,q1_elsayed_vs_rogers,Abdul El-Sayed,6000,26.1,6000.0,26.1
+urban_suburban_rural,suburban,q2_stevens_vs_rogers,Haley Stevens,12908,56.1,12908.0,56.1
+urban_suburban_rural,suburban,q2_stevens_vs_rogers,Mike Rogers,8000,34.8,8000.0,34.8
+urban_suburban_rural,suburban,q2_stevens_vs_rogers,Undecided,2092,9.1,2092.0,9.1
+urban_suburban_rural,suburban,q3_mcmorrow_vs_rogers,Undecided,8404,36.5,8404.0,36.5
+urban_suburban_rural,suburban,q3_mcmorrow_vs_rogers,Mike Rogers,8000,34.8,8000.0,34.8
+urban_suburban_rural,suburban,q3_mcmorrow_vs_rogers,Mallory McMorrow,6596,28.7,6596.0,28.7
+urban_suburban_rural,urban,q1_elsayed_vs_rogers,Abdul El-Sayed,14283,75.2,14283.0,75.2
+urban_suburban_rural,urban,q1_elsayed_vs_rogers,Undecided,3915,20.6,3915.0,20.6
+urban_suburban_rural,urban,q1_elsayed_vs_rogers,Mike Rogers,802,4.2,802.0,4.2
+urban_suburban_rural,urban,q2_stevens_vs_rogers,Haley Stevens,17002,89.5,17002.0,89.5
+urban_suburban_rural,urban,q2_stevens_vs_rogers,Undecided,1998,10.5,1998.0,10.5
+urban_suburban_rural,urban,q3_mcmorrow_vs_rogers,Mallory McMorrow,14319,75.4,14319.0,75.4
+urban_suburban_rural,urban,q3_mcmorrow_vs_rogers,Undecided,4538,23.9,4538.0,23.9
+urban_suburban_rural,urban,q3_mcmorrow_vs_rogers,Mike Rogers,143,0.8,143.0,0.8
+urban_suburban_rural,urban/suburban,q1_elsayed_vs_rogers,Abdul El-Sayed,4000,57.1,4000.0,57.1
+urban_suburban_rural,urban/suburban,q1_elsayed_vs_rogers,Undecided,3000,42.9,3000.0,42.9
+urban_suburban_rural,urban/suburban,q2_stevens_vs_rogers,Haley Stevens,6000,85.7,6000.0,85.7
+urban_suburban_rural,urban/suburban,q2_stevens_vs_rogers,Undecided,1000,14.3,1000.0,14.3
+urban_suburban_rural,urban/suburban,q3_mcmorrow_vs_rogers,Mallory McMorrow,4122,58.9,4122.0,58.9
+urban_suburban_rural,urban/suburban,q3_mcmorrow_vs_rogers,Undecided,2878,41.1,2878.0,41.1

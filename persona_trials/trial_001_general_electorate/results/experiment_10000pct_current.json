@@ -1,0 +1,86 @@
+{
+  "name": "10000pct_current",
+  "trial_runs": 100000,
+  "trial_run_start": 300001,
+  "trial_run_end": 400000,
+  "persona_count": 100,
+  "runs_per_persona": 10,
+  "question_level_runs": 300000000,
+  "matchups": {
+    "q1_elsayed_vs_rogers": {
+      "matchup": "Abdul El-Sayed vs Mike Rogers",
+      "summary": {
+        "Mike Rogers": {
+          "count": 3791267,
+          "pct": 37.9,
+          "weighted_pct": 37.9
+        },
+        "Abdul El-Sayed": {
+          "count": 3129508,
+          "pct": 31.3,
+          "weighted_pct": 31.3
+        },
+        "Undecided": {
+          "count": 3079225,
+          "pct": 30.8,
+          "weighted_pct": 30.8
+        }
+      },
+      "persona_margin": -6.6,
+      "rcp_margin": 0.3,
+      "detroit_chamber_margin": -4.9,
+      "vs_rcp": -6.9,
+      "vs_detroit_chamber": -1.7
+    },
+    "q2_stevens_vs_rogers": {
+      "matchup": "Haley Stevens vs Mike Rogers",
+      "summary": {
+        "Haley Stevens": {
+          "count": 4872114,
+          "pct": 48.7,
+          "weighted_pct": 48.7
+        },
+        "Mike Rogers": {
+          "count": 3100085,
+          "pct": 31.0,
+          "weighted_pct": 31.0
+        },
+        "Undecided": {
+          "count": 2027801,
+          "pct": 20.3,
+          "weighted_pct": 20.3
+        }
+      },
+      "persona_margin": 17.7,
+      "rcp_margin": 0.4,
+      "detroit_chamber_margin": -2.3,
+      "vs_rcp": 17.3,
+      "vs_detroit_chamber": 20.0
+    },
+    "q3_mcmorrow_vs_rogers": {
+      "matchup": "Mallory McMorrow vs Mike Rogers",
+      "summary": {
+        "Undecided": {
+          "count": 3583223,
+          "pct": 35.8,
+          "weighted_pct": 35.8
+        },
+        "Mike Rogers": {
+          "count": 3213541,
+          "pct": 32.1,
+          "weighted_pct": 32.1
+        },
+        "Mallory McMorrow": {
+          "count": 3203236,
+          "pct": 32.0,
+          "weighted_pct": 32.0
+        }
+      },
+      "persona_margin": -0.1,
+      "rcp_margin": -0.4,
+      "detroit_chamber_margin": -2.1,
+      "vs_rcp": 0.3,
+      "vs_detroit_chamber": 2.0
+    }
+  }
+}
