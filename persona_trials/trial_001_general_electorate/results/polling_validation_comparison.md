@@ -1,6 +1,6 @@
 # Polling Validation Comparison
 
-Polling is not used in persona answers. It is only used here as a validation check.
+Polling is not used to inform persona answers. It exists here only for context.
 
 | Matchup | Persona result | RCP average | Detroit Chamber | Read |
 | --- | ---: | ---: | ---: | --- |
