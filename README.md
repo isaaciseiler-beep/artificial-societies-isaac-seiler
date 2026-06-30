@@ -71,9 +71,7 @@ x 1,000 trial runs
 = 3,000,000 question-level simulated responses
 ```
 
-For each persona-question pair, the persona answers 10 times. The most common answer becomes that persona's answer for that trial. This, in theory, controls outliers without changing the persona set.
-
-I utilized this approach because I wanted to correct for potential outliers, twice: first at the 
+For each persona-question pair, the persona answers 10 times. The most common answer becomes that persona's answer for that trial. This controls response-level outliers without changing the persona set.
 
 ## Determining Optimal Run Size
 
@@ -93,7 +91,7 @@ The 1,000-run version is my preferred version because it is much cheaper and les
 I also ran two additional full-size checks after the initial 1,000-trial run. These runs were isolated and not influenced by the initial output files.
 
 | Run | Trial runs | Question-level runs | El-Sayed margin | Stevens margin | McMorrow margin |
-| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| --- | ---: | ---: | ---: | ---: | ---: |
 | Initial current run | 1,000 | 3,000,000 | -6.6 | +16.4 | -0.3 |
 | Independent A | 1,000 | 3,000,000 | -6.6 | +16.5 | -0.3 |
 | Independent B | 1,000 | 3,000,000 | -6.6 | +16.6 | -0.3 |
@@ -143,7 +141,7 @@ Given the size of the gap between results and the public data, I would want to t
 ## Run
 
 ```bash
-python3 persona_trials/trial_001_general_electorate/run_persona_trial_1000x.py
+python3 persona_trials/trial_001_general_electorate/run_michigan_senate_1000_trial_aggregate.py
 ```
 
 Generated outputs are written to `persona_trials/trial_001_general_electorate/results/`.
@@ -151,9 +149,8 @@ Generated outputs are written to `persona_trials/trial_001_general_electorate/re
 ## Main Files
 
 - `Data/`: source dataset
-- `Data/`: raw source dataset, kept locally and ignored by git because of file size
-- `persona_trials/trial_001_general_electorate/personas_100.csv`: final 100-person persona file
-- `persona_trials/trial_001_general_electorate/personas_100.json`: same personas as JSON
-- `persona_trials/trial_001_general_electorate/run_persona_trial.py`: persona scoring and trial logic
-- `persona_trials/trial_001_general_electorate/run_persona_trial_1000x.py`: main aggregate runner and polling comparison
-- `persona_trials/trial_001_general_electorate/results/EXPERIMENT_SIZE_COMPARISON.md`: run-size comparison
+- `persona_trials/trial_001_general_electorate/michigan_likely_voter_personas_100.csv`: final 100-person persona file
+- `persona_trials/trial_001_general_electorate/michigan_likely_voter_personas_100.json`: same personas as JSON
+- `persona_trials/trial_001_general_electorate/michigan_senate_persona_model.py`: persona scoring and repeated-answer logic
+- `persona_trials/trial_001_general_electorate/run_michigan_senate_1000_trial_aggregate.py`: main aggregate runner and polling comparison
+- `persona_trials/trial_001_general_electorate/results/current_1000_run_results_summary.md`: main generated result summary
