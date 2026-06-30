@@ -53,7 +53,7 @@ The source files are not tracked in git because they consist of large PDFs, ZIPs
 
 Each persona has a name, county, region, age, race/ethnicity, gender, education, income band, party lean, ideology, past voting pattern, turnout likelihood, top issues, and a short profile. All of these demographics across all 100 personas are tailored to match the statewide population.
 
-## Iteration
+## Process
 
 The work moved through a few stages:
 
@@ -61,12 +61,6 @@ The work moved through a few stages:
 2. I used repeated response aggregation. Each persona answered each matchup question ten times, and I used the modal answer to reduce response-level noise.
 3. I tested whether the results were stable at different run sizes. I ran the same repeated-aggregation setup at 100, 1,000, 10,000, and 100,000 trial runs. The core results were stable by the 1,000-trial version.
 4. I verified that multiple runs of the 1000-trial version produced consistent results.
-
-## A Note on Weighting Personas
-
-I initially tried weighting because a 100-person sample can drift quickly.
-
-The problem was that with only 100 personas, weights could end up influencing the end outcome too much. Instead of relying on heavy weights, I adjusted the raw 100-person file to match the target electorate upfront. 
 
 ## Determining Optimal Run Size
 
@@ -126,6 +120,12 @@ The personas are built from public data, not real voter interviews.
 Census, ACS, election returns, local reporting, candidate positions, and FEC data create useful context, but they cannot fully replace a high-quality voter panel or recent Michigan-specific survey data. If I had more time or access, I would add interviews with real Michigan voters and use those to improve the profiles.
 
 I also saw one major LLM failure during iteration: when polling was present in the working context, the assistant sometimes tried to steer the model toward what looked like the "correct" polling answer. I removed polling from the persona-response side and kept it only as a final validation check.
+
+## A Note on Weighting Personas
+
+I initially tried weighting because a 100-person sample can drift quickly.
+
+The problem was that with only 100 personas, weights could end up influencing the end outcome too much. Instead of relying on heavy weights, I adjusted the raw 100-person file to match the target electorate upfront. 
 
 ## Conclusion
 
