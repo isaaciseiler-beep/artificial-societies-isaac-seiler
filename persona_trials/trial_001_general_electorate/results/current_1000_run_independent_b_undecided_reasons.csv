@@ -1,0 +1,11 @@
+question_id,undecided_reason,count,pct_of_undecided
+q1_elsayed_vs_rogers,persuadable moderate,28297,91.7
+q1_elsayed_vs_rogers,turnout uncertainty,2314,7.5
+q1_elsayed_vs_rogers,issue conflict,237,0.8
+q2_stevens_vs_rogers,persuadable moderate,16431,76.6
+q2_stevens_vs_rogers,turnout uncertainty,3985,18.6
+q2_stevens_vs_rogers,issue conflict,1030,4.8
+q3_mcmorrow_vs_rogers,persuadable moderate,31900,89.3
+q3_mcmorrow_vs_rogers,turnout uncertainty,2894,8.1
+q3_mcmorrow_vs_rogers,issue conflict,890,2.5
+q3_mcmorrow_vs_rogers,party conflict,23,0.1

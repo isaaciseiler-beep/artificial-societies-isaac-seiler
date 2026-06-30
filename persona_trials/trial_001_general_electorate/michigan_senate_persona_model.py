@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
-PERSONAS_PATH = ROOT / "personas_100.csv"
+PERSONAS_PATH = ROOT / "michigan_likely_voter_personas_100.csv"
 RESULTS_DIR = ROOT / "results"
 RUNS_PER_PERSONA = 10
 METHOD = "poll_excluded_10x_modal_with_undecided"
@@ -259,7 +259,7 @@ def dem_score(persona: dict, candidate: str, run_index) -> float:
     score += IDEOLOGY_DEM_MOD[persona["ideology"]]
     score += COUNTY_DEM_MOD.get(persona["county"], 0.0)
     score += 0.015 if persona["urban_suburban_rural"] == "urban" else 0.0
-    score += -0.015 if persona["urban_suburban_rural"] == "rural" else 0.0
+    score += -0.015 if persona["urban_suburban_rural"] in {"rural", "rural/small-town"} else 0.0
     score += candidate_fit_mod(persona, candidate)
     score += issue_mod(persona, candidate)
     score += stable_variation(persona["persona_id"], candidate, "matchup")

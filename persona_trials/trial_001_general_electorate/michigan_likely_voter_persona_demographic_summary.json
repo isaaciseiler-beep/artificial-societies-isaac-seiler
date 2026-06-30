@@ -1,0 +1,68 @@
+{
+  "age_group": {
+    "18-29": 14,
+    "30-44": 21,
+    "45-64": 37,
+    "65+": 28
+  },
+  "race_ethnicity": {
+    "Asian": 1,
+    "Black": 13,
+    "Hispanic": 5,
+    "Multiracial / other": 3,
+    "White non-Hispanic": 78
+  },
+  "gender": {
+    "Female": 54,
+    "Male": 46
+  },
+  "region": {
+    "Ann Arbor / Washtenaw": 4,
+    "Detroit / Wayne": 19,
+    "Detroit suburbs": 23,
+    "Flint / Saginaw / Bay": 6,
+    "Lansing / Ingham": 3,
+    "Northern Michigan": 4,
+    "Rural / outstate": 25,
+    "Upper Peninsula": 1,
+    "West Michigan": 15
+  },
+  "urban_suburban_rural": {
+    "mixed": 21,
+    "rural/small-town": 30,
+    "suburban": 23,
+    "urban": 19,
+    "urban/suburban": 7
+  },
+  "education": {
+    "College degree": 31,
+    "High school or less": 34,
+    "Postgraduate": 5,
+    "Some college": 30
+  },
+  "income_band": {
+    "Low": 6,
+    "Lower-middle": 28,
+    "Middle": 45,
+    "Upper-middle": 21
+  },
+  "party_lean": {
+    "Independent / swing": 38,
+    "Lean Democrat": 15,
+    "Lean Republican": 14,
+    "Strong Democrat": 15,
+    "Strong Republican": 18
+  },
+  "ideology": {
+    "Conservative": 16,
+    "Liberal": 15,
+    "Moderate": 44,
+    "Progressive": 11,
+    "Very conservative": 14
+  },
+  "turnout_likelihood": {
+    "High": 51,
+    "Low": 5,
+    "Medium": 44
+  }
+}

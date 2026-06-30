@@ -1,0 +1,11 @@
+{
+  "method": "poll_excluded_1000x_10x_modal_with_undecided_independent_b",
+  "trial_runs": 1000,
+  "trial_run_start": 4001,
+  "trial_run_end": 5000,
+  "persona_count": 100,
+  "runs_per_persona_per_trial": 10,
+  "persona_level_runs": 1000000,
+  "question_level_runs": 3000000,
+  "polling_used_in_response_model": false
+}

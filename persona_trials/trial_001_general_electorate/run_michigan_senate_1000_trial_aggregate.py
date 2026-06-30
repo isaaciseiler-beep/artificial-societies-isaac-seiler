@@ -3,7 +3,7 @@ import json
 from collections import Counter, defaultdict
 from pathlib import Path
 
-import run_persona_trial as base
+import michigan_senate_persona_model as base
 
 
 TRIAL_RUNS = 1000
@@ -106,13 +106,9 @@ def write_csv(path, rows):
 
 def write_results_readme(summary):
     lines = [
-        "# Trial 001 Results",
+        "# Current 1,000-Run Results",
         "",
-        "This is a 1000-run simulation of likely Michigan general-election voters.",
-        "",
-        "The main read: Stevens looks strongest against Rogers. El-Sayed looks weakest. McMorrow is close to Rogers, but with the largest undecided group.",
-        "",
-        "This is not a poll. Polling is not used in the persona answers. It is only used afterward as a check.",
+        "Main read: Stevens strongest; El-Sayed weakest; McMorrow close with high undecided.",
         "",
         "## Full Results",
         "",
@@ -122,7 +118,7 @@ def write_results_readme(summary):
         lines.extend([f"### {question_id}", ""])
         for answer, stats in summary["full_results"][question_id].items():
             lines.append(
-                f"- {answer}: {stats['pct']}% unweighted; {stats['weighted_pct']}% weighted"
+                f"- {answer}: {stats['pct']}%"
             )
         lines.append("")
 
@@ -132,32 +128,26 @@ def write_results_readme(summary):
         lines.extend([f"### {question_id}", ""])
         for answer, stats in summary["decided_voter_results"][question_id].items():
             lines.append(
-                f"- {answer}: {stats['pct']}% unweighted; {stats['weighted_pct']}% weighted"
+                f"- {answer}: {stats['pct']}%"
             )
         lines.append("")
 
     lines.extend(["## Polling Check", ""])
-    lines.append("These are the persona margins compared with the held-out polling references in the dataset.")
-    lines.append("")
     for row in summary["polling_comparison"]:
         lines.append(
-            f"- {row['matchup']}: weighted persona margin {row['weighted_persona_margin']}; RCP margin {row['rcp_margin']}; Detroit Chamber margin {row['detroit_chamber_margin']}"
+            f"- {row['matchup']}: persona margin {row['weighted_persona_margin']}; RCP margin {row['rcp_margin']}; Detroit Chamber margin {row['detroit_chamber_margin']}"
         )
     lines.append("")
-    (RESULTS_DIR / "README_RESULTS.md").write_text("\n".join(lines), encoding="utf-8")
+    (RESULTS_DIR / "current_1000_run_results_summary.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def write_polling_comparison(summary):
     lines = [
-        "# Polling Check",
+        "# Polling Validation Comparison",
         "",
-        "This is the external check on the simulation.",
+        "Polling is not used in persona answers. It is only used here as a validation check.",
         "",
-        "Polling was not included in persona responses. The model answers first, then this file compares those answers with RCP and Detroit Chamber polling.",
-        "",
-        "The comparison is useful because it shows where the persona model lines up with public polling and where it may be too soft or too hard on a candidate.",
-        "",
-        "| Matchup | Weighted persona | RCP average | Detroit Chamber | Read |",
+        "| Matchup | Persona result | RCP average | Detroit Chamber | Read |",
         "| --- | ---: | ---: | ---: | --- |",
     ]
     for row in summary["polling_comparison"]:
@@ -165,9 +155,7 @@ def write_polling_comparison(summary):
             f"| {row['matchup']} | {row['weighted_persona_result']} | {row['rcp_result']} | {row['detroit_chamber_result']} | {row['read']} |"
         )
     lines.append("")
-    lines.append("Bottom line: Stevens is the clearest general-election profile in this model. El-Sayed is the weakest. McMorrow is close to Rogers, but the high undecided share means I would not overread that matchup.")
-    lines.append("")
-    (RESULTS_DIR / "POLLING_COMPARISON.md").write_text("\n".join(lines), encoding="utf-8")
+    (RESULTS_DIR / "polling_validation_comparison.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def main():
@@ -257,13 +245,13 @@ def main():
                 }
             )
 
-    (RESULTS_DIR / "trial_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
-    (RESULTS_DIR / "run_config.json").write_text(
+    (RESULTS_DIR / "current_1000_run_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    (RESULTS_DIR / "current_1000_run_config.json").write_text(
         json.dumps({k: v for k, v in summary.items() if k not in {"full_results", "decided_voter_results", "polling_comparison"}}, indent=2),
         encoding="utf-8",
     )
-    write_csv(RESULTS_DIR / "subgroup_results.csv", subgroup_rows)
-    write_csv(RESULTS_DIR / "undecided_reasons.csv", reason_rows)
+    write_csv(RESULTS_DIR / "current_1000_run_subgroup_results.csv", subgroup_rows)
+    write_csv(RESULTS_DIR / "current_1000_run_undecided_reasons.csv", reason_rows)
     write_results_readme(summary)
     write_polling_comparison(summary)
     print(json.dumps(summary["full_results"], indent=2))

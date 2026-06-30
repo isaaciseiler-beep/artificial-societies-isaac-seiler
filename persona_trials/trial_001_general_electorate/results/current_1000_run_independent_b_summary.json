@@ -1,0 +1,149 @@
+{
+  "method": "poll_excluded_1000x_10x_modal_with_undecided_independent_b",
+  "trial_runs": 1000,
+  "trial_run_start": 4001,
+  "trial_run_end": 5000,
+  "persona_count": 100,
+  "runs_per_persona_per_trial": 10,
+  "persona_level_runs": 1000000,
+  "question_level_runs": 3000000,
+  "polling_used_in_response_model": false,
+  "full_results": {
+    "q1_elsayed_vs_rogers": {
+      "Mike Rogers": {
+        "count": 37891,
+        "pct": 37.9,
+        "weighted_count": 37891.0,
+        "weighted_pct": 37.9
+      },
+      "Abdul El-Sayed": {
+        "count": 31261,
+        "pct": 31.3,
+        "weighted_count": 31261.0,
+        "weighted_pct": 31.3
+      },
+      "Undecided": {
+        "count": 30848,
+        "pct": 30.8,
+        "weighted_count": 30848.0,
+        "weighted_pct": 30.8
+      }
+    },
+    "q2_stevens_vs_rogers": {
+      "Haley Stevens": {
+        "count": 47554,
+        "pct": 47.6,
+        "weighted_count": 47554.0,
+        "weighted_pct": 47.6
+      },
+      "Mike Rogers": {
+        "count": 31000,
+        "pct": 31.0,
+        "weighted_count": 31000.0,
+        "weighted_pct": 31.0
+      },
+      "Undecided": {
+        "count": 21446,
+        "pct": 21.4,
+        "weighted_count": 21446.0,
+        "weighted_pct": 21.4
+      }
+    },
+    "q3_mcmorrow_vs_rogers": {
+      "Undecided": {
+        "count": 35707,
+        "pct": 35.7,
+        "weighted_count": 35707.0,
+        "weighted_pct": 35.7
+      },
+      "Mike Rogers": {
+        "count": 32281,
+        "pct": 32.3,
+        "weighted_count": 32281.0,
+        "weighted_pct": 32.3
+      },
+      "Mallory McMorrow": {
+        "count": 32012,
+        "pct": 32.0,
+        "weighted_count": 32012.0,
+        "weighted_pct": 32.0
+      }
+    }
+  },
+  "decided_voter_results": {
+    "q1_elsayed_vs_rogers": {
+      "Mike Rogers": {
+        "count": 37891,
+        "pct": 54.8,
+        "weighted_count": 37891.0,
+        "weighted_pct": 54.8
+      },
+      "Abdul El-Sayed": {
+        "count": 31261,
+        "pct": 45.2,
+        "weighted_count": 31261.0,
+        "weighted_pct": 45.2
+      }
+    },
+    "q2_stevens_vs_rogers": {
+      "Haley Stevens": {
+        "count": 47554,
+        "pct": 60.5,
+        "weighted_count": 47554.0,
+        "weighted_pct": 60.5
+      },
+      "Mike Rogers": {
+        "count": 31000,
+        "pct": 39.5,
+        "weighted_count": 31000.0,
+        "weighted_pct": 39.5
+      }
+    },
+    "q3_mcmorrow_vs_rogers": {
+      "Mike Rogers": {
+        "count": 32281,
+        "pct": 50.2,
+        "weighted_count": 32281.0,
+        "weighted_pct": 50.2
+      },
+      "Mallory McMorrow": {
+        "count": 32012,
+        "pct": 49.8,
+        "weighted_count": 32012.0,
+        "weighted_pct": 49.8
+      }
+    }
+  },
+  "polling_comparison": [
+    {
+      "matchup": "Abdul El-Sayed vs Mike Rogers",
+      "weighted_persona_margin": -6.6,
+      "rcp_margin": 0.3,
+      "detroit_chamber_margin": -4.9,
+      "weighted_persona_result": "Abdul El-Sayed 31.3 / Rogers 37.9 / Undecided 30.8",
+      "rcp_result": "Abdul El-Sayed 43.3 / Rogers 43.0 / Unallocated 13.7",
+      "detroit_chamber_result": "Abdul El-Sayed 39.8 / Rogers 44.7 / Undecided 15.5",
+      "read": "weaker than polling for Democrat"
+    },
+    {
+      "matchup": "Haley Stevens vs Mike Rogers",
+      "weighted_persona_margin": 16.6,
+      "rcp_margin": 0.4,
+      "detroit_chamber_margin": -2.3,
+      "weighted_persona_result": "Haley Stevens 47.6 / Rogers 31.0 / Undecided 21.4",
+      "rcp_result": "Haley Stevens 43.7 / Rogers 43.3 / Unallocated 13.0",
+      "detroit_chamber_result": "Haley Stevens 41.5 / Rogers 43.8 / Undecided 14.7",
+      "read": "stronger than polling for Democrat"
+    },
+    {
+      "matchup": "Mallory McMorrow vs Mike Rogers",
+      "weighted_persona_margin": -0.3,
+      "rcp_margin": -0.4,
+      "detroit_chamber_margin": -2.1,
+      "weighted_persona_result": "Mallory McMorrow 32.0 / Rogers 32.3 / Undecided 35.7",
+      "rcp_result": "Mallory McMorrow 42.3 / Rogers 42.7 / Unallocated 15.0",
+      "detroit_chamber_result": "Mallory McMorrow 40.7 / Rogers 42.8 / Undecided 16.5",
+      "read": "broadly close to polling"
+    }
+  ]
+}

@@ -84,6 +84,18 @@ I tested smaller and larger versions of the same experiment. These runs use the 
 
 The 1,000-run version is my preferred version because it is much cheaper and less time intensive than the very large runs and already stable. The largest run, featuring 300,000,000 question-level runs, took over 75 minutes to complete. Going from 10,000 to 100,000 runs did not change the one-decimal margins, and does not meaningfully alter the results.
 
+## Repeatability Check
+
+I also ran two additional full-size checks after the initial 1,000-trial run. These runs used separate trial-id ranges, so they were not influenced by the initial output files.
+
+| Run | Trial-id range | Trial runs | Question-level runs | El-Sayed margin | Stevens margin | McMorrow margin |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| Initial current run | 1-1,000 | 1,000 | 3,000,000 | -6.6 | +16.4 | -0.3 |
+| Independent A | 3,001-4,000 | 1,000 | 3,000,000 | -6.6 | +16.5 | -0.3 |
+| Independent B | 4,001-5,000 | 1,000 | 3,000,000 | -6.6 | +16.6 | -0.3 |
+
+These results are repeatable within a slim margin. Across three independent full-size runs, the El-Sayed and McMorrow margins are unchanged at one-decimal precision, and the Stevens margin moves only from +16.4 to +16.6. That supports the core finding as stable rather than an artifact of one generated output file.
+
 ## Polling Check
 
 Real-world polling is not used in the dataset that informs persona answers. It is only used afterward as a check.
