@@ -59,6 +59,19 @@ I initially tried weighting because a 100-person sample can drift quickly.
 
 The problem was that with only 100 personas, weights could end up influencing the end outcome too much. Instead of relying on heavy weights, I adjusted the raw 100-person file to match the target electorate upfront. 
 
+## Determining Optimal Run Size
+
+I tested smaller and larger versions of the same experiment. These runs use the same personas and questions, but different trial counts. They also use separate trial-id ranges, so they are independent experiments.
+
+| Size | Trial runs | Question-level runs | El-Sayed margin | Stevens margin | McMorrow margin |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 10% current | 100 | 300,000 | -6.5 | +17.4 | 0.0 |
+| Current | 1,000 | 3,000,000 | -6.6 | +17.7 | -0.2 |
+| 1000% current | 10,000 | 30,000,000 | -6.6 | +17.7 | -0.1 |
+| 10000% current | 100,000 | 300,000,000 | -6.6 | +17.7 | -0.1 |
+
+The 1,000-run version is my preferred version because it is much cheaper and less time intensive than the very large runs and already stable. The largest run, featuring 300,000,000 question-level runs, took over 75 minutes to complete. Going from 10,000 to 100,000 runs did not change the one-decimal margins, and does not meaningfully alter the results.
+
 ## How The Run Works
 
 The main run uses:
@@ -72,19 +85,6 @@ x 1,000 trial runs
 ```
 
 For each persona-question pair, the persona answers 10 times. The most common answer becomes that persona's answer for that trial. This controls response-level outliers without changing the persona set.
-
-## Determining Optimal Run Size
-
-I tested smaller and larger versions of the same experiment. These runs use the same personas and questions, but different trial counts. They also use separate trial-id ranges, so they are independent experiments.
-
-| Size | Trial runs | Question-level runs | El-Sayed margin | Stevens margin | McMorrow margin |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| 10% current | 100 | 300,000 | -6.5 | +17.4 | 0.0 |
-| Current | 1,000 | 3,000,000 | -6.6 | +17.7 | -0.2 |
-| 1000% current | 10,000 | 30,000,000 | -6.6 | +17.7 | -0.1 |
-| 10000% current | 100,000 | 300,000,000 | -6.6 | +17.7 | -0.1 |
-
-The 1,000-run version is my preferred version because it is much cheaper and less time intensive than the very large runs and already stable. The largest run, featuring 300,000,000 question-level runs, took over 75 minutes to complete. Going from 10,000 to 100,000 runs did not change the one-decimal margins, and does not meaningfully alter the results.
 
 ## Testing Repeatability
 
